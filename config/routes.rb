@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/jobs/:id", to: "jobs#show", as: "job"
   get "/jobs/:id/edit", to: "jobs#edit", as: "edit_job"
   patch "/jobs/:id", to: "jobs#update"
+  delete "/jobs/:id", to: "jobs#delete", as: "delete_job"
 end
